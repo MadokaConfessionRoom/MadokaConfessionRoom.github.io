@@ -50,6 +50,19 @@ p{margin: 10px}
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
   }
 
+  .container {
+  position: relative;
+  /* 必要に応じて幅や高さを指定 */
+  display: inline-block; /* または width: 300px; height: 300px; など */
+}
+.container img:last-child { /* 重ねる画像 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 必要に応じて他のスタイルを指定 */
+}
+
+
   .menu a {
     color: #000;
     text-decoration: none;
@@ -75,7 +88,12 @@ p{margin: 10px}
 <body>
     <h1>肖像画</h1>
     <p>管理人の紹介ページです</p>
-    <img src = "">
+    <div class="container">
+  <img src="" alt="背景画像">
+  <img src="" alt="枠画像">
+</div>
+
+
     <h2>まどか</h2>
     <div class = "frame">
     <p>お茶女♡アイドルカフェ　14期生</p>
@@ -83,7 +101,7 @@ p{margin: 10px}
     <p>絵文字：🪽</p>
     </div>
     <div class = "space"></div>
-    <a href = "img src = """>2025徽音祭プロフィール</a>
+    <a href = "img src = ">2025徽音祭プロフィール</a>
     <div class = "space"></div>
     <a href = "http://127.0.0.1:5500/index.html">ホームへ</a>    
 </body>
